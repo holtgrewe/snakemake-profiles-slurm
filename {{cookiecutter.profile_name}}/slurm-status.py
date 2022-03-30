@@ -68,7 +68,7 @@ def get_status_sidecar(jobid):
     except requests.exceptions.ConnectionError as e:
         logger.warning("slurm-status.py: could not query side car: %s", e)
         logger.info("slurm-status.py: falling back to direct query")
-        return get_status_direct(jobid)
+        return get_status_direct(jobid) or ""
 
 
 jobid = sys.argv[1]
