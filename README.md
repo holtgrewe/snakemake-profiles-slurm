@@ -68,6 +68,10 @@ For a more light-weight alternative, see the excellent repo
 #79](https://github.com/Snakemake-Profiles/slurm/issues/79)).
 
 
+## Dependencies
+
+The Snakemake slurm profile requires Snakemake >=7.0.2 but has no extra dependencies.
+
 ## Quickstart
 
 To create a slurm profile from the cookiecutter, simply run
